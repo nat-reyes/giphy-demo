@@ -4,10 +4,15 @@
     border: 5px solid rgba(0, 0, 0, 0.3);
     border-radius: 50%;
     border-left-color: #7d47ff;
-
     animation: spin 1s ease infinite;
 }
 
+.spinner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: 10rem;
+}
 @keyframes spin {
     0% {
         transform: rotate(0deg);

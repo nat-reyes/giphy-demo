@@ -1,10 +1,10 @@
 import React from 'react';
 import './Spinner.css';
 
-function Spinner({ color }){
-    return(
-        <div className="spinner">
-
+function Spinner() {
+    return (
+        <div className="spinner-container">
+            <div className="spinner"/>
         </div>
     )
 }

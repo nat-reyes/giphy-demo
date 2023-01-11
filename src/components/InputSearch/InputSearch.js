@@ -1,7 +1,7 @@
 import React from 'react';
 import './InputSearchStyle.css';
 
-function InputSearch({onSaveSearch, onSearch}){
+function InputSearch({onSearch}){
     return(
        <div>
            <input
@@ -12,7 +12,6 @@ function InputSearch({onSaveSearch, onSearch}){
                onChange={(event) => onSearch(event?.target?.value)}
                placeholder="Search giphy"
            />
-           <button className="search-giphy-btn" onClick={() => onSearch()}>Search giphy</button>
        </div>
     )
 }

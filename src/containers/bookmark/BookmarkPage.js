@@ -1,15 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './BookmarkStyle.css';
-import InputSearch from "../../components/InputSearch/InputSearch";
-import CardContainer from "../../components/CardsContainer/CardContainer";
 import {useSelector} from "react-redux";
 import {bookmarksSelector} from "../../reducer/bookmark/BookmarkSlice";
 import {Link} from "react-router-dom";
+import {InputSearch, GiphyContainer} from "../../components";
 
 function BookmarkPage(){
     const {bookmarks} = useSelector(bookmarksSelector);
-    console.log(bookmarks);
-    const [filteredBookmarks, setFilteredBookmarks] = useState(bookmarks);
     return(
         <div>
             <div className="bookmark-page-container">
@@ -20,7 +17,7 @@ function BookmarkPage(){
                     </Link>
                 </div>
             </div>
-            <CardContainer cards={filteredBookmarks}/>
+            <GiphyContainer cards={bookmarks}/>
         </div>
     )
 }

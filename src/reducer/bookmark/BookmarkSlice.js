@@ -14,8 +14,6 @@ export const bookmarkSlice = createSlice({
             state.bookmarks = [...state.bookmarks, payload];
         },
         removeGiphy: (state, { payload }) => {
-            console.log(payload)
-            console.log(state.bookmarks)
             state.bookmarks = state.bookmarks.filter((giphy) => giphy?.id !== payload);
         }
     },
