@@ -1,0 +1,17 @@
+.bookmark-page-container {
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.home-page-btn-container,
+.home-page-btn {
+    background-color: #9933ff;
+    color: #000000;
+    font-weight: bold;
+    border-color: #212121;
+    padding: 1rem;
+    border-radius: 1.2rem;
+    text-decoration: none;
+}

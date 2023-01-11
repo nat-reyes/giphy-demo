@@ -1,0 +1,30 @@
+.pagination-container {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    column-gap: 5px;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.arrow-container{
+    height: 24px;
+    width: 24px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 50%;
+    color: #282c34;
+}
+
+.page-display{
+    white-space: nowrap;
+    margin-top: 0.5rem;
+}

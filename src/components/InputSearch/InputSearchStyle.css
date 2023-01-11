@@ -1,0 +1,17 @@
+.search-giphy-input {
+    box-shadow: 0px 0px 1px 0px rgb(190, 190, 190);
+    border-radius: 1.2rem;
+    padding: 0.5rem;
+    width: 40rem;
+    height: 2rem;
+    margin-right: 0.4rem;
+}
+
+.search-giphy-btn {
+    font-weight: bold;
+    border-color: #212121;
+    background-color: grey;
+    padding: 1rem;
+    border-radius: 1.2rem;
+    cursor: pointer;
+}

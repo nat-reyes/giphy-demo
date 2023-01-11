@@ -1,0 +1,33 @@
+.cards-container {
+    display: grid;
+    padding: 10px 20px;
+    grid-template-columns: repeat(5, 15rem);
+    grid-column-gap: 4px;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card-item__title{
+    font-size: 12px;
+    font-weight: bold;
+    color: #9933ff;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+.add-item-bookmark {
+    position: absolute;
+    right: 1rem;
+    z-index:1000;
+    float: right;
+    top: 10px;
+    color: #db1f48;
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+    border-color: #000000;
+}
+

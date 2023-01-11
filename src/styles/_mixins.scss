@@ -1,0 +1,8 @@
+@mixin flex-container($direction: 'horizontal') {
+  display: flex;
+  @if $direction == 'horizontal' {
+    flex-direction: row;
+  } @else {
+    flex-direction: column;
+  }
+}
