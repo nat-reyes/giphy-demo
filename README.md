@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This project simulates a Giphy as a small demo. It uses the giphy API to search a giphy and initially brings the data of the trending giphy.
+This project simulates the Giphy page as a small demo. It uses the giphy API to search a giphy and initially brings the data of the trending giphy data.
 
 Functionalities:
 - As a user, you can initially see the first 25 trending giphy.
