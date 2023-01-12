@@ -68,4 +68,6 @@ In the project directory, you can run:
 - [Eslint.js](https://eslint.org/)
 - [Prettier.js](https://prettier.io/)
 
+**Font awesome **
+- For icons [Font-awesome](https://fontawesome.com/)
 
