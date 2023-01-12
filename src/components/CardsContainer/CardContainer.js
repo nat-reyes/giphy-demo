@@ -5,6 +5,16 @@ import {addGiphy, bookmarksSelector, removeGiphy} from "../../reducer/bookmark/B
 import PropTypes from "prop-types";
 import {Pagination, Spinner} from "../index";
 
+/**
+ *
+ * @param cards {array} items to show in the grid
+ * @param isLoading {boolean} is loading data
+ * @param onPageChange {func} function triggered when the pagination arrows are clicked
+ * @param pagination {obj}
+ * @param shouldShowPagination {boolean}
+ * @returns {JSX.Element}
+ * @constructor
+ */
 function CardContainer({cards, isLoading, onPageChange, pagination, shouldShowPagination}) {
     const dispatch = useDispatch();
     const {bookmarks} = useSelector(bookmarksSelector);
@@ -54,4 +64,4 @@ CardContainer.propTypes = {
     cards: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
     isLoading: PropTypes.bool,
 };
-export default CardContainer;
+export default React.memo(CardContainer);

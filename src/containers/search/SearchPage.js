@@ -38,6 +38,7 @@ function SearchPage() {
 
     const onRequest = (params) => requestGiphy(setGiphyImages, params, setIsLoading);
     const hasSearchedValues = giphyImages?.data?.length > 0;
+
     const giphyItems = hasSearchedValues ? giphyImages?.data : trending?.data;
     const paginationItems = hasSearchedValues ? giphyImages?.pagination : trending?.pagination;
 

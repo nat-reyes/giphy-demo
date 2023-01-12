@@ -26,22 +26,26 @@ function Pagination({onPageChange, pagination}) {
         <div className="pagination-container">
             <div className="page">
                 <div
+                    data-test-id="go-to-next-page"
+                    onClick={previousPage}
                     style={{
                         opacity: previousIsDisabled ? 0.5 : 1,
                         pointerEvents: previousIsDisabled ? 'not-allowed' : 'unset',
                         cursor: previousIsDisabled ? 'not-allowed' : 'pointer',
                     }}
                     className="arrow-container">
-                    <i onClick={previousPage} className="fa-solid fa-circle-arrow-left"></i>
+                    <i className="fa-solid fa-circle-arrow-left"></i>
                 </div>
                 <div className="page-display">{`Page: ${page}`}</div>
-                <div style={{
-                    opacity: nextIsDisabled ? 0.5 : 1,
-                    pointerEvents: nextIsDisabled ? 'not-allowed' : 'unset',
-                    cursor: nextIsDisabled ? 'not-allowed' : 'pointer',
-                }}
-                     className="arrow-container">
-                    <i onClick={nextPage} className="fa-solid fa-circle-arrow-right"></i>
+                <div
+                    data-test-id="go-to-previous-page" onClick={nextPage}
+                    style={{
+                        opacity: nextIsDisabled ? 0.5 : 1,
+                        pointerEvents: nextIsDisabled ? 'not-allowed' : 'unset',
+                        cursor: nextIsDisabled ? 'not-allowed' : 'pointer',
+                    }}
+                    className="arrow-container">
+                    <i className="fa-solid fa-circle-arrow-right"></i>
                 </div>
             </div>
         </div>
@@ -51,4 +55,4 @@ function Pagination({onPageChange, pagination}) {
 Pagination.propTypes = {
     onPageChange: PropTypes.func.isRequired,
 };
-export default Pagination;
+export default React.memo(Pagination);

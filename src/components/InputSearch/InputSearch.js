@@ -1,13 +1,19 @@
 import React from 'react';
 import './InputSearchStyle.css';
 
+/**
+ *
+ * @param onSearch {func}
+ * @returns {JSX.Element}
+ * @constructor
+ */
 function InputSearch({onSearch}){
     return(
        <div>
            <input
                title="Search"
                type="text"
-               id="search-giphy"
+               data-test-id="search-giphy"
                className="search-giphy-input"
                onChange={(event) => onSearch(event?.target?.value)}
                placeholder="Search giphy"
