@@ -8,6 +8,7 @@ import { Provider as ReduxProvider } from "react-redux";
 import { store } from "./reducer/store";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+//index
 root.render(
     <React.StrictMode>
         <ReduxProvider store={store}>
